@@ -1,0 +1,218 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.ttf') format('woff2');
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f2937;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 36px;
+  padding: 0.1em;
+  margin-top: -0.1em;
+  color: #f9faf8;
+}
+
+ul {
+  display: flex;
+  gap: 3em;
+  margin-right: 1em;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.img-elm {
+  max-width: 30em;
+  width: 55%;
+  height: 15em;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 2.7em;
+}
+
+.image-in-future {
+  width: 10em;
+  height: 10em;
+  padding: 1em;
+  border: 2px solid #3882f6;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.img-description {
+  width: 8em;
+  font-size: 18px;
+  font-weight: 300;
+  color: #1f2937;
+  text-align: start;
+  margin-top: -0.5em;
+}
+.player-name {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: start;
+  color: #1f2937;
+}
+.img-list {
+  display: flex;
+  padding: 2em;
+  gap: 3em;
+  justify-content: center;
+  margin: 0 auto;
+}
+#messi {
+  background-image: url('./images/messi.jpg');
+}
+#di-maria {
+  background-image: url('./images/dimaria.jpg');
+}
+#julian {
+  background-image: url('./images/julian.jpg');
+}
+#enzo {
+  background-image: url('./images/enzo.jpg');
+}
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+  padding: 4em;
+  color: #1f2937;
+}
+
+.wrapper-header {
+  font-size: 34px;
+  font-weight: 900;
+  color: #1f2937;
+  margin-top: 0.5em;
+}
+
+.gray-container,
+.quote-wrapper,
+.call-wrapper {
+  padding: 10em;
+}
+.gray-container {
+  background-color: #1f2937;
+  display: flex;
+  gap: 6em;
+}
+
+.quote-wrapper {
+  background-color: #e5e7eb;
+}
+
+.main-text {
+  font-weight: 800;
+  font-size: 48px;
+  color: #f9faf8;
+  margin-bottom: 0.6em;
+}
+
+.secondary-text {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-top: -1.3em;
+}
+
+.welcome-words {
+  width: 45%;
+  margin: auto 0;
+}
+
+.btn {
+  text-align: center;
+  padding: 0.7em 1em;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
+
+.first-btn,
+.second-btn {
+  align-self: flex-start;
+}
+
+.first-btn {
+  color: #e5e7eb;
+  background-color: #3882f6;
+}
+
+.second-btn {
+  border: 2px solid #e5e7eb;
+  color: #f9faf8;
+  background: transparent;
+  margin: auto 0.5em;
+}
+
+.quote {
+  padding: 0.5em;
+  width: 70%;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 100;
+  color: #1f2937;
+  margin: 0 auto;
+}
+
+.Author {
+  text-align: right;
+  font-weight: 900;
+  font-size: 23px;
+}
+
+.quote-text {
+  text-align: center;
+}
+
+.call-wrapper {
+  padding: 6em;
+}
+
+.call-text {
+  margin-bottom: -0.7em;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 1em;
+  color: #e5e7eb;
+  font-size: 18px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #3882f6;
+}
+
+footer {
+  text-align: center;
+  font-size: 16px;
+  background-color: #1f2937;
+  padding: 0.1em;
+  color: #e5e7eb;
+}
