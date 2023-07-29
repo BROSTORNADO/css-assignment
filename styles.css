@@ -1,39 +1,36 @@
-:root {
-  --font-family: "Roboto", sans-serif;
-  --primary-color: #1f2937;
-  --secondary-color: #e5e7eb;
-  --accent-color: #3882f6;
-  --text-color: #f9faf8;
-  --base-font-size: 16px;
-}
+/* Fonts and Body */
 
 @font-face {
-  font-family: "Roboto";
-  src: url("./fonts/Roboto-Regular.ttf") format("woff2");
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.ttf') format('woff2');
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
 }
 
+/* Header*/
+
 header {
   display: flex;
   justify-content: space-between;
-  background-color: var(--primary-color);
+  background-color: #1f2937;
   position: fixed;
   width: 100%;
   z-index: 100;
 }
 
 .logo {
-  font-size: 2.25rem;
+  font-size: 36px;
   padding: 0.1em;
   margin-top: -0.1em;
-  color: var(--text-color);
+  color: #f9faf8;
 }
+
+/* Header Nav*/
 
 ul {
   display: flex;
@@ -44,113 +41,22 @@ ul {
 
 a {
   text-decoration: none;
-  font-size: 1.125rem;
-  color: var(--secondary-color);
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
-.img-elm {
-  max-width: 30em;
-  width: 55%;
-  height: 15em;
-  object-fit: cover;
-  border-radius: 5px;
-  margin-top: 2.7em;
-}
-
-.image-in-future {
-  width: 10em;
-  height: 10em;
-  padding: 1em;
-  border: 2px solid var(--accent-color);
-  border-radius: 10px;
-  background-size: cover;
-}
-
-.img-description {
-  width: 8em;
-  font-size: 1.125rem;
-  font-weight: 300;
-  color: var(--primary-color);
-  text-align: start;
-  margin-top: -0.5em;
-}
-
-.player-name {
-  font-size: 1.25rem;
-  font-weight: 900;
-  text-align: start;
-  color: var(--primary-color);
-}
-
-.img-list {
-  display: flex;
-  padding: 2em;
-  gap: 3em;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-#messi {
-  background-image: url("./images/messi.jpg");
-}
-
-#di-maria {
-  background-image: url("./images/dimaria.jpg");
-}
-
-#julian {
-  background-image: url("./images/julian.jpg");
-}
-
-#enzo {
-  background-image: url("./images/enzo.jpg");
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-}
-
-.wrapper {
-  margin: 0 auto;
-  text-align: center;
-  padding: 4em;
-  color: var(--primary-color);
-}
-
-.wrapper-header {
-  font-size: 2.125rem;
-  font-weight: 900;
-  color: var(--primary-color);
-  margin-top: 0.5em;
-}
-
-.gray-container,
-.quote-wrapper,
-.call-wrapper {
-  padding: 10em;
-}
-
-.gray-container {
-  background-color: var(--primary-color);
-  display: flex;
-  gap: 6em;
-}
-
-.quote-wrapper {
-  background-color: var(--secondary-color);
-}
+/* Main Part */
 
 .main-text {
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 48px;
   color: #f9faf8;
   margin-bottom: 0.6em;
 }
 
 .secondary-text {
-  font-size: 1.125rem;
-  color: var(--secondary-color);
+  font-size: 18px;
+  color: #e5e7eb;
   margin-top: -1.3em;
 }
 
@@ -173,36 +79,132 @@ article {
 }
 
 .first-btn {
-  color: var(--secondary-color);
-  background-color: var(--accent-color);
+  color: #e5e7eb;
+  background-color: #3882f6;
 }
 
 .second-btn {
-  border: 2px solid var(--secondary-color);
-  color: var(--text-color);
+  border: 2px solid #e5e7eb;
+  color: #f9faf8;
   background: transparent;
   margin: auto 0.5em;
 }
 
-.quote {
-  padding: 0.5em;
-  width: 70%;
-  font-size: 2.25rem;
-  font-style: italic;
-  font-weight: 100;
-  color: var(--primary-color);
+/* Footballers Images */
+
+.img-elm {
+  max-width: 30em;
+  width: 55%;
+  height: 15em;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 2.7em;
+}
+
+.image-in-future {
+  width: 10em;
+  height: 10em;
+  padding: 1em;
+  border: 2px solid #3882f6;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.img-description {
+  width: 10em;
+  font-size: 18px;
+  font-weight: 400;
+  color: #1f2937;
+  text-align: center;
+  margin-top: -0.5em;
+}
+
+.player-name {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: start;
+  color: #1f2937;
+  margin-left: 16px;
+}
+
+.img-list {
+  display: flex;
+  padding: 2em;
+  gap: 5em;
+  justify-content: center;
   margin: 0 auto;
 }
 
-.Author {
-  text-align: right;
-  font-weight: 900;
-  font-size: 1.4375rem;
+#messi {
+  background-image: url('./images/messi.jpg');
 }
 
-.quote-text {
-  text-align: center;
+#di-maria {
+  background-image: url('./images/dimaria.jpg');
 }
+
+#julian {
+  background-image: url('./images/julian.jpg');
+}
+
+#enzo {
+  background-image: url('./images/enzo.jpg');
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+  padding: 4em;
+  color: #1f2937;
+}
+
+.wrapper-header {
+  font-size: 34px;
+  font-weight: 900;
+  color: #1f2937;
+  margin-top: 0.5em;
+}
+
+.gray-container,
+.quote-wrapper,
+.call-wrapper {
+  padding: 10em;
+}
+
+.gray-container {
+  background-color: #1f2937;
+  display: flex;
+  gap: 6em;
+}
+
+/* Quote */
+
+#quote {
+  font-family: 'Roboto', Segoe UI, Oxygen;
+  background-color: #E5E7EB;
+  color: #1F2937;
+  padding: 50px 5%;
+}
+
+.text-container h3 {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.text-container p {
+  text-align: right;
+  font-weight: bold;
+  font-size: 24x;
+}
+
+/* Call to Action */
 
 .call-wrapper {
   padding: 6em;
@@ -211,7 +213,7 @@ article {
 .call-text {
   margin-bottom: -0.7em;
   font-weight: 700;
-  font-size: 1.4375rem;
+  font-size: 23px;
 }
 
 .call-to-action {
@@ -219,17 +221,34 @@ article {
   justify-content: space-evenly;
   border-radius: 5px;
   padding: 1em;
-  color: var(--secondary-color);
-  font-size: 1.125rem;
+  color: #e5e7eb;
+  font-size: 18px;
   width: 80%;
   margin: 0 auto;
-  background-color: var(--accent-color);
+  background-color: #3882f6;
 }
+
+/* Footer */
 
 footer {
   text-align: center;
-  font-size: 1rem;
-  background-color: var(--primary-color);
+  font-size: 16px;
+  background-color: #1f2937;
   padding: 0.1em;
-  color: var(--secondary-color);
+  color: #e5e7eb;
+}
+
+/* Back to top */
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(2, 2, 2);
+  color: white;
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
 }
