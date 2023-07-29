@@ -4,6 +4,7 @@
   --secondary-color: #e5e7eb;
   --accent-color: #3882f6;
   --text-color: #f9faf8;
+  --base-font-size: 16px;
 }
 
 @font-face {
@@ -28,7 +29,7 @@ header {
 }
 
 .logo {
-  font-size: 36px;
+  font-size: 2.25rem;
   padding: 0.1em;
   margin-top: -0.1em;
   color: var(--text-color);
@@ -43,7 +44,7 @@ ul {
 
 a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: var(--secondary-color);
 }
 
@@ -67,18 +68,20 @@ a {
 
 .img-description {
   width: 8em;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   color: var(--primary-color);
   text-align: start;
   margin-top: -0.5em;
 }
+
 .player-name {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 900;
   text-align: start;
   color: var(--primary-color);
 }
+
 .img-list {
   display: flex;
   padding: 2em;
@@ -86,18 +89,23 @@ a {
   justify-content: center;
   margin: 0 auto;
 }
+
 #messi {
   background-image: url("./images/messi.jpg");
 }
+
 #di-maria {
   background-image: url("./images/dimaria.jpg");
 }
+
 #julian {
   background-image: url("./images/julian.jpg");
 }
+
 #enzo {
   background-image: url("./images/enzo.jpg");
 }
+
 article {
   display: flex;
   flex-direction: column;
@@ -111,7 +119,7 @@ article {
 }
 
 .wrapper-header {
-  font-size: 34px;
+  font-size: 2.125rem;
   font-weight: 900;
   color: var(--primary-color);
   margin-top: 0.5em;
@@ -122,6 +130,7 @@ article {
 .call-wrapper {
   padding: 10em;
 }
+
 .gray-container {
   background-color: var(--primary-color);
   display: flex;
@@ -134,13 +143,13 @@ article {
 
 .main-text {
   font-weight: 800;
-  font-size: 48px;
+  font-size: 3rem;
   color: #f9faf8;
   margin-bottom: 0.6em;
 }
 
 .secondary-text {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: var(--secondary-color);
   margin-top: -1.3em;
 }
@@ -178,7 +187,7 @@ article {
 .quote {
   padding: 0.5em;
   width: 70%;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: italic;
   font-weight: 100;
   color: var(--primary-color);
@@ -188,7 +197,7 @@ article {
 .Author {
   text-align: right;
   font-weight: 900;
-  font-size: 23px;
+  font-size: 1.4375rem;
 }
 
 .quote-text {
@@ -202,7 +211,7 @@ article {
 .call-text {
   margin-bottom: -0.7em;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 1.4375rem;
 }
 
 .call-to-action {
@@ -211,7 +220,7 @@ article {
   border-radius: 5px;
   padding: 1em;
   color: var(--secondary-color);
-  font-size: 18px;
+  font-size: 1.125rem;
   width: 80%;
   margin: 0 auto;
   background-color: var(--accent-color);
@@ -219,7 +228,7 @@ article {
 
 footer {
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   background-color: var(--primary-color);
   padding: 0.1em;
   color: var(--secondary-color);
