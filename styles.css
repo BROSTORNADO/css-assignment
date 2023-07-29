@@ -1,3 +1,5 @@
+/* Fonts and Body */
+
 @font-face {
   font-family: 'Roboto';
   src: url('./fonts/Roboto-Regular.ttf') format('woff2');
@@ -9,6 +11,8 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+
+/* Header*/
 
 header {
   display: flex;
@@ -26,6 +30,8 @@ header {
   color: #f9faf8;
 }
 
+/* Header Nav*/
+
 ul {
   display: flex;
   gap: 3em;
@@ -39,90 +45,7 @@ a {
   color: #e5e7eb;
 }
 
-.img-elm {
-  max-width: 30em;
-  width: 55%;
-  height: 15em;
-  object-fit: cover;
-  border-radius: 5px;
-  margin-top: 2.7em;
-}
-
-.image-in-future {
-  width: 10em;
-  height: 10em;
-  padding: 1em;
-  border: 2px solid #3882f6;
-  border-radius: 10px;
-  background-size: cover;
-}
-
-.img-description {
-  width: 8em;
-  font-size: 18px;
-  font-weight: 300;
-  color: #1f2937;
-  text-align: start;
-  margin-top: -0.5em;
-}
-.player-name {
-  font-size: 20px;
-  font-weight: 900;
-  text-align: start;
-  color: #1f2937;
-}
-.img-list {
-  display: flex;
-  padding: 2em;
-  gap: 3em;
-  justify-content: center;
-  margin: 0 auto;
-}
-#messi {
-  background-image: url('./images/messi.jpg');
-}
-#di-maria {
-  background-image: url('./images/dimaria.jpg');
-}
-#julian {
-  background-image: url('./images/julian.jpg');
-}
-#enzo {
-  background-image: url('./images/enzo.jpg');
-}
-article {
-  display: flex;
-  flex-direction: column;
-}
-
-.wrapper {
-  margin: 0 auto;
-  text-align: center;
-  padding: 4em;
-  color: #1f2937;
-}
-
-.wrapper-header {
-  font-size: 34px;
-  font-weight: 900;
-  color: #1f2937;
-  margin-top: 0.5em;
-}
-
-.gray-container,
-.quote-wrapper,
-.call-wrapper {
-  padding: 10em;
-}
-.gray-container {
-  background-color: #1f2937;
-  display: flex;
-  gap: 6em;
-}
-
-.quote-wrapper {
-  background-color: #e5e7eb;
-}
+/* Main Part */
 
 .main-text {
   font-weight: 800;
@@ -167,25 +90,121 @@ article {
   margin: auto 0.5em;
 }
 
-.quote {
-  padding: 0.5em;
-  width: 70%;
-  font-size: 36px;
-  font-style: italic;
-  font-weight: 100;
+/* Footballers Images */
+
+.img-elm {
+  max-width: 30em;
+  width: 55%;
+  height: 15em;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 2.7em;
+}
+
+.image-in-future {
+  width: 10em;
+  height: 10em;
+  padding: 1em;
+  border: 2px solid #3882f6;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.img-description {
+  width: 10em;
+  font-size: 18px;
+  font-weight: 400;
   color: #1f2937;
+  text-align: center;
+  margin-top: -0.5em;
+}
+
+.player-name {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: start;
+  color: #1f2937;
+  margin-left: 16px;
+}
+
+.img-list {
+  display: flex;
+  padding: 2em;
+  gap: 5em;
+  justify-content: center;
   margin: 0 auto;
 }
 
-.Author {
-  text-align: right;
-  font-weight: 900;
-  font-size: 23px;
+#messi {
+  background-image: url('./images/messi.jpg');
 }
 
-.quote-text {
-  text-align: center;
+#di-maria {
+  background-image: url('./images/dimaria.jpg');
 }
+
+#julian {
+  background-image: url('./images/julian.jpg');
+}
+
+#enzo {
+  background-image: url('./images/enzo.jpg');
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+  padding: 4em;
+  color: #1f2937;
+}
+
+.wrapper-header {
+  font-size: 34px;
+  font-weight: 900;
+  color: #1f2937;
+  margin-top: 0.5em;
+}
+
+.gray-container,
+.quote-wrapper,
+.call-wrapper {
+  padding: 10em;
+}
+
+.gray-container {
+  background-color: #1f2937;
+  display: flex;
+  gap: 6em;
+}
+
+/* Quote */
+
+#quote {
+  font-family: 'Roboto', Segoe UI, Oxygen;
+  background-color: #E5E7EB;
+  color: #1F2937;
+  padding: 50px 5%;
+}
+
+.text-container h3 {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.text-container p {
+  text-align: right;
+  font-weight: bold;
+  font-size: 24x;
+}
+
+/* Call to Action */
 
 .call-wrapper {
   padding: 6em;
@@ -209,10 +228,27 @@ article {
   background-color: #3882f6;
 }
 
+/* Footer */
+
 footer {
   text-align: center;
   font-size: 16px;
   background-color: #1f2937;
   padding: 0.1em;
   color: #e5e7eb;
+}
+
+/* Back to top */
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(2, 2, 2);
+  color: white;
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
 }
