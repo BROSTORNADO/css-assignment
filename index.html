@@ -1,100 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS ASSIGNMENT</title>
-  </head>
-  <body>
-    <header>
-      <h1 class="logo">🇦🇷</h1>
-      <nav>
-        <ul>
-          <li><a href="#page1">Home</a></li>
-          <li><a href="#page2">Info</a></li>
-          <li><a href="#page3">Quote</a></li>
+<html>
+<head>
+  <title>Navigation Bar</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+      <nav class="navbar">
+        <div class="logo">
+          <!-- Add your logo image or text here -->
+          <a href="#">Logo</a>
+        </div>
+        <ul class="nav-links">
+          <li ><a href="#" class="navigation">Home</a></li>
+          <li class="navigation"><a href="#">About</a></li>
+          <li class="navigation"><a href="#">Services</a></li>
+          <!-- Add more navigation links as needed -->
         </ul>
       </nav>
-    </header>
-    <main>
-      <section id="page1" class="gray-container">
-        <div class="welcome-words">
-          <h2 class="main-text">The best players of the World Champion</h2>
-          <p class="secondary-text">
-            Here you will know the best players that had their participation in
-            the past World Cup QATAR 2022
+      <section class="head-section">
+        <div class="left-content">
+          <h1 class="section-title">This website is <br>awesome</h1>
+          <p class="text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus sequi eaque nesciunt voluptas odio, 
+            molestias sapiente labore autem non assumenda error vitae
+             reprehenderit fugit officiis doloribus nisi! Totam, quo voluptates.</p>
+             <div class="button-container">
+                <button class="sign-up-button">Sign up</button>
+             </div>
+        </div>
+        <div class="right-content">
+          <img src="./images/shawshank.jpg" alt="" height="200px" width="400px">
+        </div>
+      </section>
+    </div>
+    <div class="movie-heading">
+       <h3>More information on the movies</h3>
+    </div>
+
+      <section class="info-section-main">
+        <div class="image-container">
+          <img src="./images/interstellar.jpg" alt="" >
+          <p class="about-movie">
+            Inception centres on brooding “extractor” Dom Cobb played by 
+            Leonardo DiCaprio thief who invades targets
+            chemical-induced shared dream state 
           </p>
-          <button class="btn first-btn">Sign up</button>
         </div>
-        <img src="images/mainimage.jpg" class="img-elm" alt="dark-image" />
-      </section>
-      <section id="page2" class="white-container">
-        <div class="wrapper">
-          <h3 class="wrapper-header">Top 4 footballers of the World Cup</h3>
-          <div class="img-list">
-            <article>
-              <div id="messi" class="image-in-future"></div>
-              <p class="player-name">Lionel Messi</p>
-              <p class="img-description">
-                Simply the best soccer player in the world, he can do almost
-                everything, the captain of the national team.
-              </p>
-            </article>
-            <article>
-              <div id="di-maria" class="image-in-future"></div>
-              <p class="player-name">Angel Di Maria</p>
-              <p class="img-description">
-                Left footed footballer who bring the best dribbling on the
-                pitch, experienced and reliable, the 2nd captain.
-              </p>
-            </article>
-            <article>
-              <div id="enzo" class="image-in-future"></div>
-              <p class="player-name">Enzo Fernandez</p>
-              <p class="img-description">
-                Central Midfielder who has the ability to tackle and pass like
-                no one, he also can score from long distance.
-              </p>
-            </article>
-            <article>
-              <div id="julian" class="image-in-future"></div>
-              <p class="player-name">Julian Alvarez</p>
-              <p class="img-description">
-                A world class forward who has dribbling, shooting and stamina
-                like no one, he can run 120 minutes like nothing.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section id="page3" class="quote-wrapper">
-        <div class="quote">
-          <p class="quote-text">
-            This Cup we won also belongs to all those who did not win it in the
-            previous World Cups we played, like in 2014 in Brazil, where
-            everyone deserved it for how they fought until the very end, worked
-            hard and wanted it as much as I did.... and we deserved it even in
-            that damn final.
+        <div class="image-container">
+          <img src="./images/inception.jpg" alt="" height="150px" width="170px">
+          <p class="about-movie">
+            Centres on brooding “extractor” Dom Cobb played by 
+            Leonardo DiCaprio thief who invades targets' dreams through a 
+            chemical-induced shared dream state in order
           </p>
-          <p class="Author">Messi</p>
         </div>
-      </section>
-      <section id="page4" class="call-wrapper">
-        <div class="call-to-action">
-          <div class="see">
-            <h4 class="call-text">Subscribe to our newsletter !</h4>
-            <p>
-              We will send you only the best football related content around the
-              world, recommend it to your friends!
-            </p>
-          </div>
-          <button class="btn second-btn">Sign up</button>
+        <div class="image-container">
+          <img src="./images/lord.jpg" alt="" height="150px" width="170px">
+          <p class="about-movie">
+            Lord centres on brooding “extractor” Dom Cobb played by 
+            Leonardo DiCapri thief who invades targets' dreams through a 
+            chemical-induced shared dream state in order
+          </p>
         </div>
-      </section>
-    </main>
-    <footer>
-      <p>©ARGENTINA BEST PLAYERS - ALL RIGHTS RESERVED©️</p>
-    </footer>
-  </body>
+        <div class="image-container">
+          <img src="./images/pulp.jpg" alt="" height="150px" width="170px">
+          <p class="about-movie">
+            Pulpcentres on brooding “extractor” Dom Cobb played by 
+            Leonardo thief who invades targets' dreams through a 
+            chemical-induced shared dream state in order 
+          </p>
+        </div>
+    </section>
+    <section class="more-info">
+      <p class="inspiring-quote">
+        Don't find customers for your products, find products for your customers. Good products can be sold by honest advertising. If you don't think the product is good, you have no business 
+        to be advertising it If you believe your product or service can fulfill a true need, it's your moral obligation to sell it.
+      </p>
+    </section>
+    
+    <section class="call-to-action-session">
+      <h4 class="call-to-action-heaading">Call to action! It's time!</h4>
+      <div class="call-to-action-align">
+        <p class="sign-up-text">Sign up for our product by clicking that button right over there!</p>
+        <div class="second-button-container"><button class="sign-up-button-2">Sign up</button></div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer-box">
+        <p class="Copyright">Copyright&#64;</p>
+      </div>
+    </section>
+</body>
 </html>
