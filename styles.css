@@ -1,18 +1,107 @@
-/* Fonts and Body */
-
 @font-face {
   font-family: 'Roboto';
   src: url('./fonts/Roboto-Regular.ttf') format('woff2');
 }
+.stats-title {
+  border: 1px solid red;
+}
+.stats-text {
+  margin: 1.5em;
+}
+.story {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #1f2937;
+}
+.waves-container {
+  color: #1f2937;
+  text-align: center;
+  padding: 2em;
+  width: 80%;
+  margin: 0 auto;
+}
+.stats-text {
+  font-size: 36px;
+}
+.stats-img {
+  width: 15em;
+  height: 15em;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 0.7em;
+}
+.statistic {
+  text-align: center;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+}
 
+.statistic strong {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.statistic ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2em;
+}
+
+.statistic li {
+  margin: 10px 0;
+}
+.messi {
+  padding-top: 2em;
+}
+.player {
+  display: flex;
+  justify-content: space-between;
+}
+.bg-quote {
+  background-color: #e5e7eb;
+}
+.bg-gray {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+.player-info {
+  flex: 1;
+  padding: 0.5em;
+  margin: 2em;
+}
+/* Loading line animation */
+.statistic li:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 4px;
+  background-color: #1f2937;
+  animation: loading-line 1s ease-in-out;
+}
+
+@keyframes loading-line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 25%;
+  }
+}
 body {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  letter-spacing: 1px;
 }
-
-/* Header*/
 
 header {
   display: flex;
@@ -20,23 +109,21 @@ header {
   background-color: #1f2937;
   position: fixed;
   width: 100%;
-  z-index: 100;
 }
 
-.logo {
-  font-size: 36px;
-  padding: 0.1em;
-  margin-top: -0.1em;
-  color: #f9faf8;
+.logo-img {
+  width: 2em;
+  height: 2em;
+  padding: 0.7em;
+  object-fit: cover;
 }
 
-/* Header Nav*/
-
-ul {
+nav {
   display: flex;
   gap: 3em;
-  margin-right: 1em;
+  margin: auto 0.5em;
   list-style: none;
+  padding: 0.5em;
 }
 
 a {
@@ -45,110 +132,53 @@ a {
   color: #e5e7eb;
 }
 
-/* Main Part */
-
-.main-text {
-  font-weight: 800;
-  font-size: 48px;
-  color: #f9faf8;
-  margin-bottom: 0.6em;
-}
-
-.secondary-text {
-  font-size: 18px;
-  color: #e5e7eb;
-  margin-top: -1.3em;
-}
-
-.welcome-words {
-  width: 45%;
-  margin: auto 0;
-}
-
-.btn {
-  text-align: center;
-  padding: 0.7em 1em;
-  border-radius: 10px;
-  border: none;
-  font-weight: bold;
-}
-
-.first-btn,
-.second-btn {
-  align-self: flex-start;
-}
-
-.first-btn {
-  color: #e5e7eb;
-  background-color: #3882f6;
-}
-
-.second-btn {
-  border: 2px solid #e5e7eb;
-  color: #f9faf8;
-  background: transparent;
-  margin: auto 0.5em;
-}
-
-/* Footballers Images */
-
 .img-elm {
-  max-width: 30em;
-  width: 55%;
-  height: 15em;
+  width: 400px;
+  height: 200px;
   object-fit: cover;
   border-radius: 5px;
-  margin-top: 2.7em;
 }
-
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1f2937;
+  color: white;
+  font-size: 20px;
+  padding: 0.3em;
+  width: 1em;
+  height: 1em;
+  border-radius: 20%;
+  font-weight: 900;
+  cursor: pointer;
+  text-decoration: none;
+}
 .image-in-future {
   width: 10em;
   height: 10em;
-  padding: 1em;
   border: 2px solid #3882f6;
   border-radius: 10px;
-  background-size: cover;
+  object-fit: cover;
 }
 
 .img-description {
-  width: 10em;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   color: #1f2937;
   text-align: center;
-  margin-top: -0.5em;
 }
-
 .player-name {
   font-size: 20px;
   font-weight: 900;
-  text-align: start;
+  text-align: center;
   color: #1f2937;
-  margin-left: 16px;
 }
-
 .img-list {
   display: flex;
   padding: 2em;
-  gap: 5em;
+  gap: 3em;
   justify-content: center;
   margin: 0 auto;
-}
-
-#messi {
-  background-image: url('./images/messi.jpg');
-}
-
-#di-maria {
-  background-image: url('./images/dimaria.jpg');
-}
-
-#julian {
-  background-image: url('./images/julian.jpg');
-}
-
-#enzo {
-  background-image: url('./images/enzo.jpg');
 }
 
 article {
@@ -173,38 +203,88 @@ article {
 .gray-container,
 .quote-wrapper,
 .call-wrapper {
-  padding: 10em;
+  padding: 5em;
 }
-
 .gray-container {
   background-color: #1f2937;
   display: flex;
-  gap: 6em;
+  gap: 2em;
+  width: 100%;
 }
 
-/* Quote */
-
-#quote {
-  font-family: 'Roboto', Segoe UI, Oxygen;
-  background-color: #E5E7EB;
-  color: #1F2937;
-  padding: 50px 5%;
+.quote-wrapper {
+  background-color: #e5e7eb;
 }
 
-.text-container h3 {
+.main-text {
+  font-weight: 800;
+  font-size: 48px;
+  color: #f9faf8;
+  margin-bottom: 0.6em;
+}
+
+.secondary-text {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-top: -1.3em;
+}
+
+.welcome-words {
+  width: 45%;
+  min-width: 30em;
+  /* margin: auto 0; */
+}
+
+.btn {
+  text-align: center;
+  padding: 0.7em 1em;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
+
+.first-btn,
+.second-btn {
+  /* align-self: flex-start; */
+  min-width: 6em;
+  font-size: 1rem;
+}
+
+.first-btn {
+  color: #e5e7eb;
+  background-color: #3882f6;
+}
+
+.second-btn {
+  border: 2px solid #e5e7eb;
+  color: #f9faf8;
+  background: transparent;
+  margin: auto 0.5em;
+}
+.see {
+  width: 65%;
+}
+.quote {
+  padding: 0.5em;
+  width: 70%;
   font-size: 36px;
   font-style: italic;
-  font-weight: 300;
-  text-align: justify;
+  font-weight: 100;
+  color: #1f2937;
+  margin: 0 auto;
 }
 
-.text-container p {
+.Author {
   text-align: right;
-  font-weight: bold;
-  font-size: 24x;
+  font-weight: 900;
+  font-size: 23px;
+  color: #1f2937;
+  margin-left: 100%;
 }
 
-/* Call to Action */
+.quote-text {
+  text-align: center;
+}
 
 .call-wrapper {
   padding: 6em;
@@ -219,16 +299,14 @@ article {
 .call-to-action {
   display: flex;
   justify-content: space-evenly;
-  border-radius: 5px;
-  padding: 1em;
+  border-radius: 8px;
+  padding: 1.5em;
   color: #e5e7eb;
   font-size: 18px;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   background-color: #3882f6;
 }
-
-/* Footer */
 
 footer {
   text-align: center;
@@ -237,18 +315,37 @@ footer {
   padding: 0.1em;
   color: #e5e7eb;
 }
-
-/* Back to top */
-
-#back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #1f2937;
-  color: white;
-  font-size: 24px;
-  padding: 10px 15px;
-  border-radius: 10px;
-  cursor: pointer;
-  text-decoration: none;
+@media (max-width: 900px) {
+  .gray-container {
+    flex-direction: column;
+    font-size: 18px;
+    padding: 1em;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  .welcome-words {
+    font-size: small;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .secondary-text {
+    font-size: small;
+  }
+  .img-elm {
+    object-fit: cover;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .quote {
+    padding: 0.5em;
+    width: 100%;
+    font-size: 20px;
+  }
+  .call-to-action {
+    flex-direction: column;
+  }
+  .img-list {
+    flex-direction: column;
+  }
 }
